@@ -64,6 +64,10 @@ TEST_NO_RETURN[5]="-2147483648" # INT_MIN, nothing happens
 ################################################################################
 TEST_RETURNS_OPERATIONS[0]="1 2 3 -4" # List it not sorted
 TEST_RETURNS_OPERATIONS[1]="-4 0 5 3" # List it not sorted
+TEST_RETURNS_OPERATIONS[2]="4 3 \"2 1\"" # Arguments in quotes
+TEST_RETURNS_OPERATIONS[3]="4 3 \" 2 1 \"" # Arguments in quotes with extra spaces
+TEST_RETURNS_OPERATIONS[4]="4 3 \"2 0001\"" # Arguments in quotes with extra zeros
+TEST_RETURNS_OPERATIONS[5]="4 3 \"2      1\"" # Arguments in quotes with extra extra spaces
 
 ## TESTS THAT SHOULD RETURN AN ERROR
 ################################################################################
@@ -77,7 +81,8 @@ TEST_RETURNS_ERROR[6]="\"\"" # Devrait me mettre une erreur puisaue le test suiv
 TEST_RETURNS_ERROR[7]="1 2 3 4 3" # Duplicate, returns error
 TEST_RETURNS_ERROR[8]="1 2 3 \"4 5 6 1\"" # Duplicate, returns error
 TEST_RETURNS_ERROR[9]="1 2 3-4" # Formating error, returns error
-TEST_RETURNS_ERROR[10]="\"-4 4\" 5 4" # Duplicate, returns error
+TEST_RETURNS_ERROR[10]="\"--4 4\" 5 3" # Double negative sign, returns error
+TEST_RETURNS_ERROR[11]="\"-4 4\" 5 4" # Duplicate, returns error
 
 ################################################################################
 ##                                  HEADER                                    ##
@@ -128,7 +133,7 @@ done
 ## TESTS THAT SHOULD LAUNCH PUSH_SWAP AND RETURN OPERATIONS
 ################################################################################
 
-printf "\nshould return operations: " # a virer
+printf "\nshould return operations: "
 for j in "${!TEST_RETURNS_OPERATIONS[@]}"
 do
   RESULT=$(${PROGRAM_PATH}/${PROGRAM} "${TEST_RETURNS_OPERATIONS[$j]}") # SETS TEST RESULT TO VARIABLE $RESULT
