@@ -27,7 +27,7 @@ If needed, open the script and change the path of you push_swap executable.
 ### push_swap_num_gen.sh
 
 ```shell
-./push_swap_num_gen [NUMBER OF NUMBERS YOU NEED] 
+./push_swap_num_gen [HOW MANY NUMBERS YOU NEED] 
 ```
 
 ### Using the number generator with the 42 Push_swap Checker
