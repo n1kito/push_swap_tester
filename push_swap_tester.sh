@@ -230,10 +230,10 @@ function launch_test {
 }
 
 #launch_test 2 # This might be a bit of an overkill.
-#launch_test 3
-#launch_test 5
-#launch_test 10
-#launch_test 100
+launch_test 3
+launch_test 5
+launch_test 10
+launch_test 100
 launch_test 500
 
 printf "All tests done :)\n"
