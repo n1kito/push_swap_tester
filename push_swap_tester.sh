@@ -9,6 +9,7 @@
 # -TODO JE NE VERIFIE QUE LA STRING "Error" et pas "Error\n" pour les tests d'erreur, si je mets le \n ca marche pas. Je préfèrerais que ca teste ca aussi.
 # -TODO J'ARRIVE PAS A FAIRE MARCHER LE TEST 6 (et les tests avec des double quotes) il me met erreur mais je pige pas pourquoi
 # -TODO Pour les tests ou il ne doit rien renvoyer je dois check le stderr et le std out. Pareil pour les tests ou il doit renvoyer quelque chose, je dois rien avoir en stderr.
+# -TODO Mes tests sur des lignes de 3 me mettent 2 coups max alors que normalement c'est 3
 
 ################################################################################
 ##                             USEFUL VARIABLES                               ##
