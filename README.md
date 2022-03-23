@@ -1,16 +1,5 @@
 # Push_swap tester
 
-██▓███   █    ██   ██████  ██░ ██              ██████  █     █░ ▄▄▄       ██▓███
-▓██░  ██▒ ██  ▓██▒▒██    ▒ ▓██░ ██▒▒           ██    ▒ ▓█░ █ ░█░▒████▄    ▓██░  ██▒
-▓██░ ██▓▒▓██  ▒██░░ ▓██▄   ▒██▀▀██░░            ▓██▄   ▒█░ █ ░█ ▒██  ▀█▄  ▓██░ ██▓▒
-▒██▄█▓▒ ▒▓▓█  ░██░  ▒   ██▒░██ ░██              ▒   ██▒░█░ █ ░█ ░██▄▄▄▄██ ▒██▄█▓▒ ▒
-▒██▒ ░  ░▒▒█████▓ ▒██████▒▒░▓█▒░██▓▒ ▓▒█████░▓ ██████▒▒░░██▒██▓  ▓█   ▓██▒▒██▒ ░  ░
-▒▓▒░ ░  ░░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░ ▒ ░░▒░▒▒ ▒▓▒ ▒▓▒  ▒ ░░ ▓░▒ ▒   ▒▒   ▓▒█░▒▓▒░ ░  ░
-░▒ ░     ░░▒░ ░ ░ ░ ░▒  ░ ░ ▒ ░▒░ ░░ ░▒  ░▒░  ░ ░  ▒ ░ ░    ▒   ▒▒ ░░▒ ░
-░░        ░░░ ░ ░ ░  ░  ░   ░  ░░ ░░  ░   ░   ░    ░   ░    ░   ▒   ░░
-░           ░   ░  ░  ░       ░   ░      ░          ░  ░
-\e[2m(tester by nikito)\e[22m
-
 A simple tester I wrote to help me with my push_swap project.  
 The tester is divided into two scripts that can also be used separately, allowing you to also generate random strings of numbers.
 
