@@ -9,11 +9,11 @@ Clone this repo directly into the folder where your push_swap executable is loca
 
 
 ```shell
-$ git clone https://github.com/n1kito/push_swap_tester.git
+git clone https://github.com/n1kito/push_swap_tester.git
 
-$ cd push_swap_tester
+cd push_swap_tester
 
-$ chmod +x push_swap_tester.sh push_swap_num_gen.sh
+chmod +x push_swap_tester.sh push_swap_num_gen.sh
 ```
 
 ### push_swap_tester.sh
