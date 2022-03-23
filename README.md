@@ -45,9 +45,3 @@ $ ARG=$(../push_swap_tester/push_swap_num_gen.sh 10); ./push_swap $ARG | ./check
 # If you want both:
 $ ARG=$(../push_swap_tester/push_swap_num_gen.sh 100); ./push_swap $ARG | ./checker_MAC $ARG; echo $ARG; echo -n "Tested:"; echo $ARG | wc -w
 ```
-
-If you want to make sure that n numbers were actually tested:
-```shell
-$ ARG=$(../push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG
-# This will run your program on 500 numbers and pass it through the checker.
-```
