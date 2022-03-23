@@ -30,7 +30,7 @@ If needed, open the script and change the path of you push_swap executable.
 ./push_swap_num_gen [NUMBER OF NUMBERS YOU NEED] 
 ```
 
-### Using the number generator with the 42 Push_swap checker
+### Using the number generator with the 42 Push_swap Checker
 
 From the directory where your executable is located.
 
