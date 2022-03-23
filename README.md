@@ -11,6 +11,8 @@ Clone this repo directly into the folder where your push_swap executable is loca
 ```shell
 $ git clone https://github.com/n1kito/push_swap_tester.git
 
+$ cd push_swap_tester
+
 $ chmod +x push_swap_tester.sh push_swap_num_gen.sh
 ```
 
@@ -29,6 +31,8 @@ If needed, open the script and change the path of you push_swap executable.
 ```
 
 ### Using the number generator with the 42 Push_swap checker
+
+From the directory where your executable is located.
 
 ```shell
 ARG=$(./push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG
