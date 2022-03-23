@@ -1,6 +1,6 @@
 # Push_swap tester
 
-A simple tester I wrote to help me with my push_swap project.
+A simple tester I wrote to help me with my push_swap project.  
 The tester is divided in two scripts that can also be used separately, allowing you to also simply generate random strings of numbers.
 
 ## Usage
