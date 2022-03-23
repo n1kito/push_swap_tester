@@ -19,15 +19,13 @@ $ chmod +x push_swap_tester.sh push_swap_num_gen.sh
 If needed, open the script and change the path of you push_swap executable.
 
 ```shell
-./push_swap_tester.sh $ARGUMENT 
-# $ARGUMENT is the number of tests you want done.
+./push_swap_tester.sh [NUMBER OF TESTS YOU WANT DONE] 
 ```
 
 ### push_swap_num_gen.sh
 
 ```shell
-./push_swap_num_gen $ARGUMENT
-# $ARGUMENT is how many numbers you want generated.
+./push_swap_num_gen [NUMBER OF NUMBERS YOU NEED] 
 ```
 
 ### Using the number generator with the 42 Push_swap checker
