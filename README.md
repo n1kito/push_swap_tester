@@ -33,18 +33,18 @@ $ ./push_swap_num_gen $ARGUMENT
 ### Using the number generator with the 42 Push_swap checker
 
 ```shell
-$ ARG=$(../push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG
+$ ARG=$(./push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG
 # This will run your program on 500 numbers and pass it through the checker.
 
 # If you want to see what numbers were tester (helpful if your algorithm fails):
-$ ARG=$(../push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG; echo $ARG
+$ ARG=$(./push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG; echo $ARG
 
 # If you want to make sure that the number generator worked correctly:
-$ ARG=$(../push_swap_tester/push_swap_num_gen.sh 10); ./push_swap $ARG | ./checker_MAC $ARG; echo -n "Tested:"; echo $ARG | wc -w
+$ ARG=$(./push_swap_tester/push_swap_num_gen.sh 10); ./push_swap $ARG | ./checker_MAC $ARG; echo -n "Tested:"; echo $ARG | wc -w
 
 # If you want both:
-$ ARG=$(../push_swap_tester/push_swap_num_gen.sh 100); ./push_swap $ARG | ./checker_MAC $ARG; echo $ARG; echo -n "Tested:"; echo $ARG | wc -w
+$ ARG=$(./push_swap_tester/push_swap_num_gen.sh 100); ./push_swap $ARG | ./checker_MAC $ARG; echo $ARG; echo -n "Tested:"; echo $ARG | wc -w
 
 # If you also want to see operation count:
-$ ARG=$(../push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG; echo -n "Tested:"; echo $ARG | wc -w; echo -n "Operations:"; ./push_swap $ARG | wc -l
+$ ARG=$(./push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG; echo -n "Tested:"; echo $ARG | wc -w; echo -n "Operations:"; ./push_swap $ARG | wc -l
 ```
