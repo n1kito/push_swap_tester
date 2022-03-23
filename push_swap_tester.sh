@@ -65,9 +65,9 @@ TEST_NO_RETURN[5]="-2147483648" # INT_MIN, nothing happens
 TEST_RETURNS_OPERATIONS[0]="1 2 3 -4" # List it not sorted
 TEST_RETURNS_OPERATIONS[1]="-4 0 5 3" # List it not sorted
 TEST_RETURNS_OPERATIONS[2]="4 3 \"2 1\"" # Arguments in quotes
-TEST_RETURNS_OPERATIONS[3]="4 3 \" 2 1 \"" # Arguments in quotes with extra spaces
-TEST_RETURNS_OPERATIONS[4]="4 3 \"2 0001\"" # Arguments in quotes with extra zeros
-TEST_RETURNS_OPERATIONS[5]="4 3 \"2      1\"" # Arguments in quotes with extra extra spaces
+#TEST_RETURNS_OPERATIONS[3]="4 3 \" 2 1 \"" # Arguments in quotes with extra spaces
+#TEST_RETURNS_OPERATIONS[4]="4 3 \"4 0001\"" # Arguments in quotes with extra zeros
+#TEST_RETURNS_OPERATIONS[5]="4 3 \"2      1\"" # Arguments in quotes with extra extra spaces
 
 ## TESTS THAT SHOULD RETURN AN ERROR
 ################################################################################
@@ -161,7 +161,7 @@ do
          (( TEST_PASSED++ ))
          (( TEST_COUNT++ ))
     else
-          printf "${RED}Error${NC} (Test %s <%s> returned <%s>) " "$k" "${TEST_RETURNS_ERROR[$k]}" "${RESULT}" # IF PROGRAM RETURNED SOMETHING ELSE, TEST FAILS AND SHOWS WHAT WAS TESTED
+          printf "${RED}Error !!${NC} (Test %s <%s> returned <%s>) " "$k" "${TEST_RETURNS_ERROR[$k]}" "${RESULT}" # IF PROGRAM RETURNED SOMETHING ELSE, TEST FAILS AND SHOWS WHAT WAS TESTED
          (( TEST_COUNT++ ))
     fi
 done
