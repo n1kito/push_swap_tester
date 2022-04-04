@@ -37,18 +37,18 @@ If needed, open the script and change the path of you push_swap executable.
 From the directory where your executable is located.
 
 ```shell
-ARG=$(./push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG
+ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_linux $ARG2
 # This will run your program on 500 numbers and pass it through the checker.
 
 # If you want to see what numbers were tester (helpful if your algorithm fails):
-ARG=$(./push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG; echo $ARG
+ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_linux $ARG2; echo $ARG2
 
 # If you want to make sure that the number generator worked correctly:
-ARG=$(./push_swap_tester/push_swap_num_gen.sh 10); ./push_swap $ARG | ./checker_MAC $ARG; echo -n "Tested:"; echo $ARG | wc -w
+ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_linux $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w
 
 # If you want both:
-ARG=$(./push_swap_tester/push_swap_num_gen.sh 100); ./push_swap $ARG | ./checker_MAC $ARG; echo $ARG; echo -n "Tested:"; echo $ARG | wc -w
+ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_MAC $ARG2; echo $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w
 
 # If you also want to see operation count:
-ARG=$(./push_swap_tester/push_swap_num_gen.sh 500); ./push_swap $ARG | ./checker_MAC $ARG; echo -n "Tested:"; echo $ARG | wc -w; echo -n "Operations:"; ./push_swap $ARG | wc -l
+ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_MAC $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w; echo -n "Operations:"; ./push_swap $ARG2 | wc -l
 ```
