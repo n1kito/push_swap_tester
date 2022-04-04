@@ -1,5 +1,7 @@
 # Push_swap tester
 
+> The argument checking part of the tester is still under development, not much time to continue it right now but I will, eventually :)
+
 A simple tester I wrote to help me with my push_swap project.  
 The tester is divided into two scripts that can also be used separately, allowing you to also generate random strings of numbers.
 
