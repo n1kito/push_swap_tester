@@ -47,8 +47,8 @@ ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swa
 ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_linux $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w
 
 # If you want both:
-ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_MAC $ARG2; echo $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w
+ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_linux $ARG2; echo $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w
 
 # If you also want to see operation count:
-ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_MAC $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w; echo -n "Operations:"; ./push_swap $ARG2 | wc -l
+ARG=[LIST_LEN]; ARG2=$(./push_swap_tester/push_swap_num_gen.sh $ARG); ./push_swap $ARG2 | ./checker_linux $ARG2; echo -n "Tested:"; echo $ARG2 | wc -w; echo -n "Operations:"; ./push_swap $ARG2 | wc -l
 ```
